@@ -1,0 +1,23 @@
+# Core
+reflex==0.4.5
+uvicorn==0.27.0
+python-dotenv==1.0.0
+
+# Database
+clickhouse-driver==0.2.6
+clickhouse-connect==0.7.0
+sqlalchemy==2.0.25
+
+# Data processing
+pandas==2.1.4
+numpy==1.26.3
+
+# API & Auth (совместимые версии с Reflex)
+fastapi==0.96.1
+pydantic==1.10.13
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# Utils
+httpx==0.26.0
+aiofiles==23.2.1
