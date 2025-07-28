@@ -1,0 +1,22 @@
+import os
+os.makedirs('data', exist_ok=True)
+
+# Тестовые данные с проблемами
+test_data = """customer_id,name,email,age,city,purchase_amount,registration_date
+1,Alice,alice@email.com,25,New York,100.50,2024-01-15
+2,Bob,bob@email.com,30,London,250.75,2024-02-20
+3,,charlie@email.com,35,Paris,,2024-03-10
+4,David,,40,Tokyo,75.25,
+5,Eve,eve@email.com,,Moscow,500.00,2024-04-05
+6,Frank,frank@email.com,50,,150.00,2024-05-12
+7,,grace@email.com,55,Berlin,,2024-06-18
+8,Helen,,60,Madrid,300.00,2024-07-22
+9,Ivan,ivan@email.com,65,Rome,450.50,
+10,Julia,julia@email.com,70,Amsterdam,125.75,2024-09-01
+10,Kevin,kevin@email.com,75,London,250.75,2024-10-15
+12,,laura@email.com,,,,2024-11-20"""
+
+with open('data/test_data.csv', 'w', encoding='utf-8') as f:
+    f.write(test_data)
+
+print("✅ Файл test_data.csv создан!")

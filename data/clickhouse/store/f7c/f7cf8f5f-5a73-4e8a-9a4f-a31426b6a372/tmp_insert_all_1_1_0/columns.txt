@@ -1,0 +1,13 @@
+columns format version: 1
+11 columns:
+`check_id` UUID
+`dataset_name` String
+`table_name` String
+`column_name` String
+`check_type` String
+`check_status` String
+`error_count` UInt32
+`total_count` UInt32
+`error_percentage` Float32
+`details` String
+`created_at` DateTime

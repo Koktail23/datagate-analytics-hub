@@ -1,5 +1,5 @@
 import reflex as rx
-
+from .pages.validator import validator_page
 
 # Состояние приложения
 class State(rx.State):
@@ -77,3 +77,4 @@ def index() -> rx.Component:
 # Создаем приложение
 app = rx.App()
 app.add_page(index, route="/", title="DataGate Analytics Hub")
+app.add_page(validator_page, route="/validator", title="Валидатор данных - DataGate")
